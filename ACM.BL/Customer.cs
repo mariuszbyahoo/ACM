@@ -5,12 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 /*
  * Testing the Class: 
- * Invalid Values
+ *  Static Modifier
  */
 namespace ACM.BL
 {
     public class Customer
     {
+        public static int InstanceCount { get; set; }
         public int CustomerId { get; private set; }
         public string EmailAdress { get; set; }
         public string FirstName { get; set; }
