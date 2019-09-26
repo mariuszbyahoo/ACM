@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 /*
  * Testing the Class: 
- * Valid Values
+ * Invalid Values
  */
 namespace ACM.BL
 {
@@ -33,7 +33,16 @@ namespace ACM.BL
         {
             get
             {
-                return LastName + " " + FirstName;
+                string fullName = LastName;
+                if(!string.IsNullOrWhiteSpace(FirstName))
+                {
+                    if (!string.IsNullOrWhiteSpace(LastName))
+                    {
+                        fullName += " ";
+                    }
+                    fullName += FirstName;
+                }
+                return fullName;
             }
         }
     }
