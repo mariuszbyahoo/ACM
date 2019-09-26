@@ -10,6 +10,18 @@ namespace ACM.BL
 {
     public class Customer
     {
+        // After instantiating a first constructor with any parameter, 
+        // we need to write a code for a default constructor if we want him to appear at a runtime.
+        public Customer()
+        {
+
+        }
+
+        public Customer(int customerId)
+        {
+            CustomerId = customerId;
+        }
+
         public static int InstanceCount { get; set; }
         public int CustomerId { get; private set; }
         public string EmailAdress { get; set; }
