@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/*
+ * Building Entity Classes: 
+ * Using Snippets
+ */
 namespace ACM.BL
 {
     public class Customer
     {
-        private string _lastName;
-        public string FirstName { get; set; } 
+        public int CustomerId { get; private set; }
+        public string EmailAdress { get; set; }
+        public string FirstName { get; set; }
         // Shortened version of property below, called Auto-Generated property.
-
+        private string _lastName;
 
         public string LastName
         {
@@ -22,6 +26,14 @@ namespace ACM.BL
             set
             {
                 _lastName = value;
+            }
+        }
+
+        public string FullName
+        {
+            get
+            {
+                return LastName + " " + FirstName;
             }
         }
     }
