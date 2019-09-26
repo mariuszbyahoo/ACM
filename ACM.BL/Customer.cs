@@ -4,10 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 /*
- * Building a Class: Methods
- *  
- *  We're not going to concern ourselces with the remainder of the code for the Retrieve and Save 
- *  methods at this time, but we do have completed code in our Validate method
+ * Testing methods
  */
 namespace ACM.BL
 {
