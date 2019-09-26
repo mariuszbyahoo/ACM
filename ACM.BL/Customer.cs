@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 /*
- * Building Entity Classes: 
- * Using Snippets
+ * Testing the Class: 
+ * Valid Values
  */
 namespace ACM.BL
 {
