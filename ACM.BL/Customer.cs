@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-/*
- * Separation of Responsibilities: Building the Address Class
- */
+
 namespace ACM.BL
 {
     public class Customer
