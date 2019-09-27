@@ -10,36 +10,26 @@ namespace ACM.BL
     {
         public Order()
         {
-            InstanceCount++;
-            OrderId = InstanceCount;
         }
+
+        public Order(int orderId)
+        {
+            OrderId = orderId;
+        }
+
+        public Adress shippingAdress { get; set; }
         public static int InstanceCount { get; set; } 
         public int OrderId { get; set; }
-        public DateTimeOffset OrderDate { get; set; }
+
+        public decimal? PurchasePrice { get; set; }
+        public DateTime OrderDate { get; set; }
 
         public bool Validate()
         {
             bool isValid = true;
-            if (OrderDate.Equals(DateTimeOffset.MinValue)) isValid = false;
+            if (OrderDate.Equals(DateTime.MinValue)) isValid = false;
+            if (PurchasePrice == 0) isValid = false;
             return isValid;
-        }
-
-        public Order Retrieve(int orderId)
-        {
-            // Code which will retrieve a specific order
-            return new Order();
-        }
-
-        public bool Save()
-        {
-            //Code which will save an order to the db
-
-            return true;
-        }
-
-        public IList<Order> RetrieveAll()
-        {
-            return new List<Order>();
         }
     }
 }

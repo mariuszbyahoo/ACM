@@ -15,7 +15,8 @@ namespace ACM.BLTest
             // -- Arrange
             var order = new Order()
             {
-                OrderDate = DateTime.Today
+                PurchasePrice = 5.5m,
+                OrderDate = new DateTime(DateTime.Now.Year, 4, 14, 10, 00, 00)
             };
 
             var expected = true;
@@ -31,32 +32,21 @@ namespace ACM.BLTest
         public void InvalidValidation()
         {
             // -- Arrange
-            var order = new Order();
+            var order = new Order()
+            {
+                PurchasePrice = 0,
+                OrderDate = DateTime.MinValue
+
+            };
 
             var expected = false; 
             // We're assuming that an user had not defined any value to this member, so the validation will be false
 
             // -- Act
-            var actual = order.Validate();
+            var actual = order.Validate(); 
 
             // -- Assert
             Assert.AreEqual(expected, actual);
-        }
-
-        [TestMethod]
-        public void ValidNumeration()
-        {
-            // -- Arrange
-            Order.InstanceCount = 0; // static field needs to be reset to 0 before the test
-
-            var order = new Order();
-
-            var expected = 1;
-
-            // -- Act
-
-            // -- Assert
-            Assert.AreEqual(expected, Order.InstanceCount);
         }
     }
 }

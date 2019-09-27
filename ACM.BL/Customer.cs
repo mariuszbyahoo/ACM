@@ -23,6 +23,8 @@ namespace ACM.BL
         }
 
         public static int InstanceCount { get; set; }
+        public Adress homeAdress { get; set; }
+        public Adress wordAdress { get; set; }
         public int CustomerId { get; private set; }
         public string EmailAdress { get; set; }
         public string FirstName { get; set; }
