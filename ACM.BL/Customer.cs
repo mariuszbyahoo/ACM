@@ -29,9 +29,10 @@ namespace ACM.BL
         public int CustomerId { get; private set; }
         public string EmailAdress { get; set; }
         public string FirstName { get; set; }
-        // Shortened version of property below, called Auto-Generated property.
+        public int Type { get; set; }
         private string _lastName;
 
+        // Shortened version of property below, called Auto-Generated property.
         public string LastName
         {
             get
