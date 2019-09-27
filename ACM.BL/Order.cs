@@ -8,16 +8,20 @@ namespace ACM.BL
 {
     public class Order
     {
-        public Order()
+        public Order() : this(0)
         {
         }
 
         public Order(int orderId)
         {
             OrderId = orderId;
+            OrderItems = new List<OrderItem>();
         }
 
-        public Adress shippingAdress { get; set; }
+        public int CustomerId { get; set; }
+        public int ShippingAdressId { get; set; }
+
+        public List<OrderItem> OrderItems { get; set; }
         public static int InstanceCount { get; set; } 
         public int OrderId { get; set; }
 
