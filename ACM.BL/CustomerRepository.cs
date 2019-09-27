@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    class CustomerRepo
+    public class CustomerRepository
     {
         /// <summary>
         /// Retrieve one customer
@@ -17,7 +17,7 @@ namespace ACM.BL
         {
             // Create the instance of the Customer class
             // pass in requested id
-            var customer = new Customer();
+            var customer = new Customer(1);
 
             // Code that retrieves the defined customer
 
