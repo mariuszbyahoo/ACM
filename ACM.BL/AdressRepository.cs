@@ -70,8 +70,6 @@ namespace ACM.BL
             return adressList;
         }
 
-        }
-
         public bool Save(Adress adress)
         {
             // Code that saves the passed in adress
