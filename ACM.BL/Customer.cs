@@ -46,7 +46,7 @@ namespace ACM.BL
             get
             {
                 string fullName = LastName;
-                if(!string.IsNullOrWhiteSpace(FirstName))
+                if (!string.IsNullOrWhiteSpace(FirstName))
                 {
                     if (!string.IsNullOrWhiteSpace(LastName))
                     {
@@ -71,35 +71,5 @@ namespace ACM.BL
 
             return isValid;
         }
-
-        /// <summary>
-        /// Retrieve one customer
-        /// </summary>
-        public Customer Retrieve(int customerId)
-        {
-            //Code thet retrieves the defined customer
-
-            return new Customer();
-        }
-
-        ///<summary>
-        /// Saves the current customer.
-        /// </summary>
-        public bool Save()
-        {
-            //Code that saves the defined customer
-
-            return true;
-        }
-
-        /// <summary>
-        /// Retrieve all customers
-        /// </summary>
-        public IList<Customer> Retrieve()
-        {
-            //Code that retrieves all of the customers
-            return new List<Customer>();
-        }
-        
     }
 }
