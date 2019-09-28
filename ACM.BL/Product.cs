@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Acme.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,7 +23,8 @@ namespace ACM.BL
         {
             get
             {
-                return _productName;
+                var stringHandler = new StringHandler();
+                return stringHandler.InsertSpaces(_productName);
             }
             set
             {
