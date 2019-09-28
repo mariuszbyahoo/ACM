@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    public class Order
+    public class Order : EntityBase
     {
         public Order() : this(0)
         {
@@ -28,7 +28,7 @@ namespace ACM.BL
         public decimal? PurchasePrice { get; set; }
         public DateTime OrderDate { get; set; }
 
-        public bool Validate()
+        public override bool Validate()
         {
             bool isValid = true;
             if (OrderDate.Equals(DateTime.MinValue)) isValid = false;

@@ -38,9 +38,28 @@ namespace ACM.BL
         /// <returns></returns>
         public bool Save(Order order)
         {
-            // Code that saves the passed in customer
+            var success = true;
 
-            return true;
+            if (order.HasChanges)
+            {
+                if (order.IsValid)
+                {
+                    if (order.IsNew)
+                    {
+                        // Call an Instert Stored Procedure
+                    }
+                    else
+                    {
+                        // Call an Update Stored Procedure
+                    }
+                }
+                else
+                {
+                    success = false;
+                }
+            }
+            return success;
+
         }
     }
 }

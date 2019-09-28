@@ -19,14 +19,14 @@ namespace ACM.BL
         public int productId { get; set; }
         public string ProductName { get; set; }
         public string Description { get; set; }
-        public decimal CurrentPrice { get; set; }
+        public decimal? CurrentPrice { get; set; }
 
         public override bool Validate()
         {
             bool isValid = true;
 
             if (string.IsNullOrEmpty(ProductName)) isValid = false;
-            if (CurrentPrice.Equals(0)) isValid = false;
+            if (CurrentPrice == null) isValid = false;
 
             return isValid;
         }
