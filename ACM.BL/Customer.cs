@@ -75,5 +75,8 @@ namespace ACM.BL
 
             return isValid;
         }
+
+        public string Log() =>
+            $"{CustomerId}: {FullName} Email: {EmailAdress} Status: {EntityState.ToString()}";
     }
 }

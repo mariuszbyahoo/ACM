@@ -44,5 +44,8 @@ namespace ACM.BL
         }
 
         public override string ToString() => ProductName;
+
+        public string Log() =>
+        $"{productId}: {ProductName} Detail: {Description} Status: {EntityState.ToString()}";
     }
 }

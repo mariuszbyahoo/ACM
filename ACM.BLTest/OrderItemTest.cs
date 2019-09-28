@@ -22,7 +22,7 @@ namespace ACM.BLTest
                 {
                     CurrentPrice = 5.5m,
                     Description = "Desc",
-                    productId = 001,
+                    ProductId = 001,
                     ProductName = "New one"
                 },
                 orderItemId = 001,
@@ -70,7 +70,7 @@ namespace ACM.BLTest
                 {
                     CurrentPrice = 5.5m,
                     Description = "Desc",
-                    productId = 001,
+                    ProductId = 001,
                     ProductName = "New one"
                 },
                 orderItemId = 001,
@@ -96,7 +96,7 @@ namespace ACM.BLTest
                 {
                     CurrentPrice = 5.5m,
                     Description = "Desc",
-                    productId = 001,
+                    ProductId = 001,
                     ProductName = "New one"
                 },
                 orderItemId = 001,
