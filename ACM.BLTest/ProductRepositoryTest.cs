@@ -16,7 +16,7 @@ namespace ACM.BLTest
             {
                 CurrentPrice = 5.5m,
                 Description = "Desc",
-                ProductName = "Product"
+                ProductName = "Sunflowers"
             };
 
             // -- Act
