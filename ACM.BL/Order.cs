@@ -35,5 +35,7 @@ namespace ACM.BL
             if (PurchasePrice == 0) isValid = false;
             return isValid;
         }
+
+        public override string ToString() => $"{OrderDate.Date} ({OrderId})";
     }
 }
